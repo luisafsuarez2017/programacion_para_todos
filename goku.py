@@ -14,6 +14,9 @@ velocidad_y = 0
 
 
 # AQUI FALTA CALCULAR LAS FORMULAS
+velocidad_x = (veloci_lanz * math.cos(angulo_lanz))
+velocidad_y = (veloci_lanz * math.sen(angulo_lanz))
+
 
 # Armo la respuesta que le voy ha mostrar al usuario
 
