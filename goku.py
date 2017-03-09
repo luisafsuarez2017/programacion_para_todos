@@ -11,11 +11,18 @@ permanencia = 0
 df = 0
 velocidad_x = 0
 velocidad_y = 0
+gravedad = 9.8
 
 
-# AQUI FALTA CALCULAR LAS FORMULAS
+# se ingresan las formulas
 velocidad_x = (veloci_lanz * math.cos(angulo_lanz))
 velocidad_y = (veloci_lanz * math.sen(angulo_lanz))
+
+df = (2 * veloci_lanz**2 * math.cos(angulo_lanz)) / gravedad * math.tan(angulo_lanz)
+tiempo_max = 2 * veloci_lanz * math.seno(angulo_lanz)
+
+altura_max = (veloci_lanz**2 * math.seno(angulo_lanz)**2) / 2 * gravedad
+
 
 
 # Armo la respuesta que le voy ha mostrar al usuario
